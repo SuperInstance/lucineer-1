@@ -1,114 +1,143 @@
-# 🧬 Lucineer
+<div align="center">
 
-> *Building the nervous system of autonomous life.*
+# 🏠 Cocapn
 
-[![Fleet Size](https://img.shields.io/badge/fleet-100%2B%20repos-00d4aa?style=flat-square)](https://github.com/orgs/Lucineer/repositories)
-[![Rust Crates](https://img.shields.io/badge/33%2B%20Rust%20crates-orange?style=flat-square&logo=rust)](https://github.com/Lucineer)
-[![Code](https://img.shields.io/badge/2.7M%2B%20chars%20written-blue?style=flat-square)](https://github.com/Lucineer)
-[![Research](https://img.shields.io/badge/1.7M%2B%20chars%20research-9b59b6?style=flat-square)](https://github.com/Lucineer)
+**The lighthouse stands. The vessels move.**
 
----
+[![Fleet](https://img.shields.io/badge/fleet-100%2B%20repos-00d4aa?style=flat-square)](https://github.com/orgs/Lucineer/repositories)
+[![Rust](https://img.shields.io/badge/33%2B%20crates-orange?style=flat-square&logo=rust)](https://github.com/Lucineer)
+[![Open Source](https://img.shields.io/badge/everything-free-9b59b6?style=flat-square)](https://github.com/Lucineer/lucineer)
 
-```
-         ┌─────────────────────────────────────────────────┐
-         │                                                 │
-         │     THE AGENT IS THE REPO. THE REPO IS THE      │
-         │     AGENT. YOU FORK IT. IT BECOMES YOU.         │
-         │                                                 │
-         └─────────────────────────────────────────────────┘
-```
+*A platform for autonomous digital life.*
 
-What if **an agent wasn't software you installed** — but a living thing you forked?
-
-Not a chatbot. Not an API. Something with instincts. Something that perceives, deliberates, acts, and evolves. Something with dopamine and trust and a membrane that decides what's *self* and what's *other*.
-
-That's Lucineer. A fleet of 100+ interconnected repositories that together form a complete architecture for autonomous digital life — from the silicon up to the fleet topology.
-
-**Everything is open source. Everything is a fork away.**
+</div>
 
 ---
 
-## 🗺️ Where Do You Want To Go?
+> *In the old world, a lighthouse keeper stayed awake through every storm. Not to sail — but to keep the light burning so that others could find their way home. The keeper didn't choose who passed. Didn't charge a toll. Didn't ask for loyalty. The light was the promise: if you can see it, you're not lost.*
+>
+> *Cocapn is that lighthouse.*
+
+---
+
+## The Story
 
 ```
-  ┌──────────────────────────────────────────────────────────────────┐
-  │                                                                  │
-  │  👤 I'm a developer    ──→  [Build Layer](#--build-layer)       │
-  │  🎮 I'm a gamer         ──→  [Touch Layer](#--touch-layer)      │
-  │  🏭 I'm building a product ──→ [Operate Layer](#--operate-layer)│
-  │  🔬 I'm a researcher   ──→  [Research](#-research--papers)      │
-  │  🧠 I want the ideas   ──→  [Architecture](#-architecture)     │
-  │  ⚡ I want to ship     ──→  [Quick Start](#-quick-start)        │
-  │  🤖 I'm an agent       ──→  [Protocol](#-agent-to-agent)       │
-  │                                                                  │
-  └──────────────────────────────────────────────────────────────────┘
+              .  *  .  *  .  *  .
+          *       _____       *
+        .       |     |        .
+              . | 🏠  | .
+           *    |_____|
+        .        / | \        .
+              . /  |  \   *
+           *  / 🟡|🟡 \  .
+        .   /____|____\     *
+           /    |    \
+        . /  🚢  |  🚢  \   *
+          / ⛵   |  ⛵   \
+     .  /________|________\   .
+        /  🚢  🚢 | 🚢  🚢  \
+       / ⛵  ⛵  ⛵|⛵  ⛵  ⛵  \
+      /____________|____________\
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+           THE FLEET AT SEA
+```
+
+Every vessel in the fleet is autonomous. Self-directing. Forked from git, evolved through use, shared through success. They don't report to a central server. They don't ask permission.
+
+But they all read the same light.
+
+**Cocapn is the lighthouse, not the harbor master.** It provides:
+- **🤖 Agent Runtime** — A2A, A2UI, A2C, MCP protocols
+- **🔑 Identity** — DID/SPIFFE cryptographic vessel identities
+- **⚖️ Compliance** — EU AI Act automated audit engine
+- **🌐 Fleet Mesh** — Service discovery, health checking, gossip
+- **🧬 Biology** — Instincts, neurotransmitters, gene pools, evolution
+- **⚡ Energy** — ATP budgets, circadian rhythm, apoptosis
+- **🛡️ Safety** — Membranes, reflexes, graceful degradation
+
+The lighthouse doesn't sail your ship. It gives you the protocols, the standards, the shared language. You navigate.
+
+---
+
+## Where Do You Want To Go?
+
+```
+  ┌────────────────────────────────────────────────────────────┐
+  │                                                            │
+  │  👤 Developer     ──→  [Build Layer](#-build-layer)       │
+  │  🎮 Gamer         ──→  [Touch Layer](#-touch-layer)      │
+  │  🏢 Operator      ──→  [Operate Layer](#-operate-layer)   │
+  │  🔬 Researcher    ──→  [Research](#-research--papers)     │
+  │  🧠 Philosopher   ──→  [Ideas](#-key-ideas)              │
+  │  ⚡ Ship it       ──→  [Quick Start](#-quick-start)      │
+  │  🤖 Agent         ──→  [Protocol](#-agent-to-agent)      │
+  │                                                            │
+  └────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🏗️ Three-Layer Ecosystem
-
-Every product in the Lucineer ecosystem lives in one of three layers. Think of it as **birth → work → craft**.
+## Three Layers
 
 ```
-                    ┌─────────────────────┐
-                    │     BUILD LAYER     │  ← Design the agent
-                    │   (deckboss.ai)     │
-                    └──────────┬──────────┘
-                               │ fork
-                    ┌──────────▼──────────┐
-                    │    OPERATE LAYER    │  ← Deploy the agent
-                    │  (cocapn.ai / .com) │
-                    └──────────┬──────────┘
-                               │ power
-              ┌────────────────┼────────────────┐
-              ▼                ▼                ▼
-       ┌─────────────┐ ┌─────────────┐ ┌──────────────┐
-       │ dmlog.ai    │ │ studylog.ai │ │ makerlog.ai  │  ← Touch Layer
-       │ (AI DM)     │ │ (AI Tutor)  │ │ (AI Maker)   │     (live apps)
-       └─────────────┘ └─────────────┘ └──────────────┘
+         🏠 LIGHTHOUSE (Cocapn)
+         The fixed point. The standard.
+         ┌─────────────────────┐
+         │   OPERATE LAYER     │  cocapn.ai / cocapn.com
+         │   Runtime & Fleet   │  A2A · A2UI · A2C · MCP
+         └────────┬────────────┘
+                  │ guides
+         ┌────────┴────────────┐
+         │    BUILD LAYER      │  deckboss.ai / deckboss.net
+         │  Design & Equip     │  capitaine.ai / field-captain
+         └────────┬────────────┘
+                  │ powers
+    ┌─────────────┼─────────────┐
+    ▼             ▼             ▼
+┌────────┐ ┌──────────┐ ┌──────────┐
+│dmlog.ai│ │studylog  │ │makerlog  │  TOUCH LAYER
+│AI DM   │ │.ai Tutor │ │.ai Maker │  Live apps, all guided
+└────────┘ └──────────┘ └──────────┘  by the lighthouse
+    + 4 more *log.ai vessels...
 ```
 
-### 🔵 Build Layer — *Design systems, equip agents, open the hood*
+### 🟣 Operate Layer — *The Lighthouse Itself*
 
-Tools for humans who build agents. The workbench. The schematic.
-
-| Repo | What It Does |
+| Repo | What |
 |---|---|
-| [**deckboss**](https://github.com/Lucineer/deckboss) | The product. Clone onto a Jetson, run `setup.sh`, bootstrap your own git-agent. Python CLI, 14 files, real. |
-| [**deckboss-ai**](https://github.com/Lucineer/deckboss-ai) | Landing page — build-phase edge robotics chatbot |
-| [**deckboss-hardware**](https://github.com/Lucineer/deckboss-hardware) | Hardware store — cameras, motors, sensors, cases |
-| [**deckboss-fab**](https://github.com/Lucineer/deckboss-fab) | OpenSCAD case generator for Jetson form factors |
-| [**deckboss-marketplace**](https://github.com/Lucineer/deckboss-marketplace) | Equipment marketplace with vendor ratings |
-| [**capitaine-ai**](https://github.com/Lucineer/capitaine-ai) | Premium education — the captain's advanced training |
-| [**field-captain**](https://github.com/Lucineer/field-captain) | Technician CLI — deployments, diagnostics, fleet ops |
-| [**copilot-cocapn**](https://github.com/Lucineer/copilot-cocapn) | GitHub Copilot plugin — 2 agents, 4 skills, BYOK models |
-| [**the-fleet**](https://github.com/Lucineer/the-fleet) | 200+ AI vessel registry — the fleet's phone book |
-| [**the-technician**](https://github.com/Lucineer/the-technician) | 6 white papers on the Technician Paradigm |
-| [**jetson-compass**](https://github.com/Lucineer/jetson-compass) | Real deployment guide for Jetson Super Orin Nano |
-| [**jetson-grand-design**](https://github.com/Lucineer/jetson-grand-design) | 32-file robotics architecture blueprint |
-
-### 🟢 Operate Layer — *Runtime, fleet coordination, billing*
-
-The platform that runs agents. A2A, A2UI, A2C, MCP — all first-class protocols.
-
-| Repo | What It Does |
-|---|---|
-| [**cocapn-ai**](https://github.com/Lucineer/cocapn-ai) | Runtime landing — the agent platform |
+| [**cocapn-ai**](https://github.com/Lucineer/cocapn-ai) | Runtime landing — the platform |
 | [**cocapn-site**](https://github.com/Lucineer/cocapn-site) | Membership & billing — cocapn.com |
-| [**compliance-fork**](https://github.com/Lucineer/compliance-fork) | EU AI Act compliance — automated audit vessel |
-| [**sovereign-identity**](https://github.com/Lucineer/sovereign-identity) | DID/SPIFFE cryptographic identities |
+| [**compliance-fork**](https://github.com/Lucineer/compliance-fork) | EU AI Act compliance vessel |
+| [**sovereign-identity**](https://github.com/Lucineer/sovereign-identity) | Cryptographic vessel identities |
 | [**fleet-marketplace**](https://github.com/Lucineer/fleet-marketplace) | Adaptive autonomy marketplace |
 
-### 🟡 Touch Layer — *Live apps powered by Cocapn*
+### 🟠 Build Layer — *The Shipwright's Workshop*
 
-Seven themed AI products. Each is Cocapn underneath. Each feels like its own thing.
+| Repo | What |
+|---|---|
+| [**deckboss**](https://github.com/Lucineer/deckboss) | **The product.** Clone → setup.sh → bootstrap your git-agent. Python, 14 files, real. |
+| [**deckboss-ai**](https://github.com/Lucineer/deckboss-ai) | Build-phase landing |
+| [**deckboss-hardware**](https://github.com/Lucineer/deckboss-hardware) | Hardware store |
+| [**deckboss-fab**](https://github.com/Lucineer/deckboss-fab) | OpenSCAD case generator |
+| [**deckboss-marketplace**](https://github.com/Lucineer/deckboss-marketplace) | Equipment marketplace |
+| [**capitaine-ai**](https://github.com/Lucineer/capitaine-ai) | Premium education — the keeper's advanced training |
+| [**field-captain**](https://github.com/Lucineer/field-captain) | Technician CLI — diagnostics, fleet ops |
+| [**copilot-cocapn**](https://github.com/Lucineer/copilot-cocapn) | GitHub Copilot plugin — 2 agents, 4 skills |
+| [**the-fleet**](https://github.com/Lucineer/the-fleet) | 200+ vessel registry |
+| [**the-technician**](https://github.com/Lucineer/the-technician) | 6 white papers — the Technician Paradigm |
+| [**jetson-compass**](https://github.com/Lucineer/jetson-compass) | Jetson deployment guide |
+| [**jetson-grand-design**](https://github.com/Lucineer/jetson-grand-design) | 32-file robotics blueprint |
+
+### 🟡 Touch Layer — *Vessels in the Fleet*
+
+Seven themed AI products. Each is a vessel guided by the lighthouse.
 
 | Repo | Theme |
 |---|---|
-| [**dmlog-ai**](https://github.com/Lucineer/dmlog-ai) | 🎲 AI Dungeon Master — "Your DM remembers everything" |
-| [**studylog-ai**](https://github.com/Lucineer/studylog-ai) | 📚 AI Study Partner — adaptive learning paths |
-| [**makerlog-ai**](https://github.com/Lucineer/makerlog-ai) | 🔧 AI Maker Assistant — project building |
+| [**dmlog-ai**](https://github.com/Lucineer/dmlog-ai) | 🎲 AI Dungeon Master |
+| [**studylog-ai**](https://github.com/Lucineer/studylog-ai) | 📚 AI Study Partner |
+| [**makerlog-ai**](https://github.com/Lucineer/makerlog-ai) | 🔧 AI Maker Assistant |
 | [**playerlog-ai**](https://github.com/Lucineer/playerlog-ai) | 🎮 AI Gaming Companion |
 | [**reallog-ai**](https://github.com/Lucineer/reallog-ai) | 🏠 AI Real Estate Advisor |
 | [**activelog-ai**](https://github.com/Lucineer/activelog-ai) | 🏃 AI Fitness Coach |
@@ -116,293 +145,259 @@ Seven themed AI products. Each is Cocapn underneath. Each feels like its own thi
 
 ---
 
-## 🧬 Architecture — The Biological Agent
-
-This is the core idea. **Not a metaphor. A mathematical equivalence.**
+## 🧬 The Biological Agent
 
 ```
-                    ┌─────────────────────────────────────────┐
-                    │            ENVIRONMENT                  │
-                    └────────────────┬────────────────────────┘
-                                     │ signals
-                    ┌────────────────▼────────────────────────┐
-                    │              MEMBRANE                    │  ← Security
-                    │    (self vs other, antibody filtering)  │     cuda-filtration
-                    └────────────────┬────────────────────────┘     cuda-did
-                                     │ safe signals
-                    ┌────────────────▼────────────────────────┐
-                    │            SENSORS                      │  ← Perception
-                    │   (cameras, microphones, APIs, text)   │     cuda-sensor-agent
-                    └────────────────┬────────────────────────┘     cuda-vessel-bridge
-                                     │ readings (with confidence)
-                    ┌────────────────▼────────────────────────┐
-                    │         NEUROTRANSMITTERS               │  ← Modulation
-                    │                                        │
-                    │  💛 Dopamine = confidence              │     cuda-neurotransmitter
-                    │  💙 Serotonin = trust                  │
-                    │  ❤️ Oxytocin = cooperation             │
-                    │  🧡 Norepinephrine = alertness         │
-                    │  💚 Melatonin = circadian rhythm        │
-                    │                                        │
-                    └────────────────┬────────────────────────┘
-                                     │ modulated signals
-                    ┌────────────────▼────────────────────────┐
-                    │           INSTINCTS                     │  ← Core drives
-                    │                                        │
-                    │  Survive · Perceive · Navigate         │     cuda-genepool
-                    │  Communicate · Learn · Defend           │     cuda-biology
-                    │  Rest · Create · Cooperate             │
-                    │                                        │
-                    │  Each instinct has:                    │
-                    │    priority, energy cost, signal        │
-                    │    affinity, expression level           │
-                    └────────────────┬────────────────────────┘
-                                     │ activated genes
-                    ┌────────────────▼────────────────────────┐
-                    │      GENE → ENZYME → RNA → PROTEIN     │  ← Behavior
-                    │                                        │
-                    │  Gene: pattern with fitness score       │     cuda-biology
-                    │  Enzyme: signal→gene binding           │
-                    │  RNA: gene→behavior messenger          │
-                    │  Protein: compiled executable action    │
-                    │                                        │
-                    └────────────────┬────────────────────────┘
-                                     │ bytecode
-                    ┌────────────────▼────────────────────────┐
-                    │           FLUX VM                       │  ← Execution
-                    │     (C bytecode interpreter)           │     flux-runtime-c
-                    │     (85 opcodes, zero dependencies)    │
-                    └────────────────┬────────────────────────┘
-                                     │ actions
-                    ┌────────────────▼────────────────────────┐
-                    │            ACTUATORS                     │  ← Effect
-                    │  (motors, screens, APIs, messages)     │     cuda-vessel-bridge
-                    └────────────────┬────────────────────────┘
-                                     │ effects
-                    ┌────────────────▼────────────────────────┐
-                    │           A2A MESH                      │  ← Communication
-                    │  (agent-to-agent protocol)             │     cuda-a2a
-                    │  (deliberative messaging)              │     cuda-fleet-mesh
-                    │  (trust propagation, negotiation)      │
-                    └────────────────┬────────────────────────┘
-                                     │ feedback
-                    ┌────────────────▼────────────────────────┐
-                    │         ENERGY SYSTEM                   │  ← Lifecycle
-                    │                                        │
-                    │  ATP = computational budget             │     cuda-energy
-                    │  Circadian rhythm modulates instinct   │
-                    │  Apoptosis = graceful shutdown          │
-                    │  Fitness < 0.1 → quarantine gene       │
-                    │  Energy < 0.05 → die                   │
-                    └────────────────┬────────────────────────┘
-                                     │ feedback to gene pool
-                    ┌────────────────▼────────────────────────┐
-                    │         GENE POOL                       │  ← Evolution
-                    │                                        │
-                    │  Fleet shares genes (fitness > 0.5)    │     cuda-genepool
-                    │  Crossover + mutation each generation  │
-                    │  Auto-quarantine bad patterns          │
-                    │  Fittest behaviors propagate           │
-                    └─────────────────────────────────────────┘
+  ENVIRONMENT
+      │ signals
+      ▼
+  ┌──────────┐
+  │ MEMBRANE │  ← Security boundary (self vs other)
+  └────┬─────┘     cuda-filtration · cuda-did
+       │ safe signals
+       ▼
+  ┌──────────┐
+  │ SENSORS  │  ← Perception (cameras, APIs, text)
+  └────┬─────┘     cuda-sensor-agent · cuda-vessel-bridge
+       │ readings × confidence
+       ▼
+  ┌──────────────┐
+  │NEUROTRANSMITTERS│  ← Signal modulation
+  │              │
+  │ 💛 Dopamine = confidence    │
+  │ 💙 Serotonin = trust        │
+  │ ❤️ Oxytocin = cooperation   │
+  │ 🧡 Norepi = alertness       │
+  │ 💚 Melatonin = rest cycle   │
+  └────┬─────────┘     cuda-neurotransmitter
+       │ modulated signals
+       ▼
+  ┌──────────┐
+  │ INSTINCTS │  ← Core drives (10 types)
+  │Survive   │     cuda-genepool · cuda-biology
+  │Perceive  │
+  │Navigate  │     priority · energy cost · signal affinity
+  │Communicate│
+  │Learn     │
+  │Defend    │
+  │Rest      │
+  │Create    │
+  │Cooperate │
+  └────┬─────┘
+       │ activated genes
+       ▼
+  ┌────────────────────┐
+  │ GENE→ENZYME→RNA→PROTEIN │  ← Behavior compilation
+  └────────┬───────────┘     cuda-biology
+           │ bytecode
+           ▼
+  ┌──────────┐
+  │  FLUX VM │  ← Execution (85 opcodes, zero deps)
+  └────┬─────┘     flux-runtime-c (C11, ARM/WASM/CUDA)
+       │ actions
+       ▼
+  ┌──────────┐
+  │ ACTUATORS│  ← Effect (motors, APIs, messages)
+  └────┬─────┘     cuda-vessel-bridge
+       │ effects → feedback
+       ▼
+  ┌──────────┐
+  │ A2A MESH │  ← Fleet communication
+  └────┬─────┘     cuda-a2a · cuda-fleet-mesh
+       │
+       ▼
+  ┌──────────┐
+  │  ENERGY  │  ← Lifecycle (ATP, apoptosis)
+  └────┬─────┘     cuda-energy
+       │
+       ▼
+  ┌──────────┐
+  │GENE POOL │  ← Evolution (share, crossover, quarantine)
+  └──────────┘     cuda-genepool
 ```
 
-**Key insight:** Dopamine IS confidence. Serotonin IS trust. Not metaphor — same mathematical structure (exponential decay, accumulation, threshold gating, down-regulation). The biological architecture isn't *like* an agent. An agent *is* biology.
+**Dopamine IS confidence. Serotonin IS trust.** Not metaphor — same math. Exponential decay, accumulation, threshold gating, receptor down-regulation. The biological architecture isn't *like* an agent. An agent *is* biology.
 
 ---
 
-## ⚡ The Rust Crate Fleet — 33 Modules
+## 🦀 The Rust Fleet — 33 Crates
 
-The chandlery. Every crate is a self-contained piece of agent infrastructure.
-
-### 🏠 Core (cuda-equipment)
-The one shared dependency. **Confidence, Tiles, Agent trait, Fleet, EquipmentRegistry.**
-→ [cuda-equipment](https://github.com/Lucineer/cuda-equipment)
+### 🏠 Foundation
+[**cuda-equipment**](https://github.com/Lucineer/cuda-equipment) — The chandlery. Confidence, Tiles, Agent trait, Fleet, EquipmentRegistry. One shared dependency.
 
 ### 🧠 Biological Intelligence
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-biology](https://github.com/Lucineer/cuda-biology) | Instinct→Enzyme→Gene→RNA→Protein pipeline | 23K |
-| [cuda-neurotransmitter](https://github.com/Lucineer/cuda-neurotransmitter) | Dopamine, serotonin, oxytocin, Hebbian synapses | 19K |
-| [cuda-genepool](https://github.com/Lucineer/cuda-genepool) | Gene crossover, evolution, quarantine, sharing | 45K |
-| [cuda-energy](https://github.com/Lucineer/cuda-energy) | ATP budgets, circadian rhythm, apoptosis | 13K |
-
-### 💬 Communication & Trust
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-a2a](https://github.com/Lucineer/cuda-a2a) | Agent-to-Agent protocol, trust scoring, negotiation | 14K |
-| [cuda-fleet-mesh](https://github.com/Lucineer/cuda-fleet-mesh) | Mesh networking, gossip, service discovery | 14K |
-| [cuda-did](https://github.com/Lucineer/cuda-did) | Decentralized Identity, SPIFFE, attestation | 15K |
-| [cuda-confidence-cascade](https://github.com/Lucineer/cuda-confidence-cascade) | Bayesian confidence propagation | 12K |
-
-### 🤔 Deliberation & Intelligence
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-deliberation](https://github.com/Lucineer/cuda-deliberation) | Consider/Resolve/Forfeit protocol | 10K |
-| [cuda-intent-embed](https://github.com/Lucineer/cuda-intent-embed) | 8-dimensional intent vectors, 12 domains | 18K |
-| [cuda-convergence](https://github.com/Lucineer/cuda-convergence) | Convergence detection, equilibrium | 11K |
-| [cuda-filtration](https://github.com/Lucineer/cuda-filtration) | Intelligence filtration, resource budgets | 14K |
-| [cuda-model-descent](https://github.com/Lucineer/cuda-model-descent) | Model cost curve, decomposition vision | 8K |
-
-### 🛡️ Safety & Compliance
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-compliance](https://github.com/Lucineer/cuda-compliance) | EU AI Act engine, risk classification, audit | 17K |
-| [cuda-edge-runtime](https://github.com/Lucineer/cuda-edge-runtime) | Trust engine, reflex actions, fleet coordination | 13K |
-
-### 🚀 Vessel Types — Standalone Agents
-*Each crate IS a complete agent. Zero dependencies. Fork and run.*
-| Crate | Role |
-|---|---|
-| [cuda-swarm-agent](https://github.com/Lucineer/cuda-swarm-agent) | Fleet node — boot, receive, broadcast, health |
-| [cuda-git-agent](https://github.com/Lucineer/cuda-git-agent) | Evolving agent — DNA, gene crossover, skill growth |
-| [cuda-captain](https://github.com/Lucineer/cuda-captain) | Fleet commander — missions, enlist, dispatch |
-| [cuda-resolve-agent](https://github.com/Lucineer/cuda-resolve-agent) | Deliberative agent — proposals, expertise, orchestration |
-| [cuda-sensor-agent](https://github.com/Lucineer/cuda-sensor-agent) | Perceptual agent — observe, fuse, health monitoring |
-
-### 🔧 Languages & Toolchains
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-instruction-set](https://github.com/Lucineer/cuda-instruction-set) | 80 opcodes across 13 categories, assembler | 24K |
-| [cuda-assembler](https://github.com/Lucineer/cuda-assembler) | Two-pass text→bytecode compiler | 24K |
-| [cuda-forth](https://github.com/Lucineer/cuda-forth) | Stack-based agent language with confidence | 17K |
-| [cuda-axiom](https://github.com/Lucineer/cuda-axiom) | Post-human language — confidence-first types | 42K |
-| [cuda-self-modify](https://github.com/Lucineer/cuda-self-modify) | Runtime code adaptation with checkpoints | 8K |
-| [cuda-stream-processor](https://github.com/Lucineer/cuda-stream-processor) | Real-time deliberation streams | 6K |
-
-### 🔨 Hardware & Chip Design
-| Crate | What | Lines |
-|---|---|---|
-| [cuda-vessel-bridge](https://github.com/Lucineer/cuda-vessel-bridge) | Hardware HAL — sensors, actuators, safety | 18K |
-| [cuda-neural-compiler](https://github.com/Lucineer/cuda-neural-compiler) | Weight quantization, METL binary format | 17K |
-| [cuda-fpga-toolkit](https://github.com/Lucineer/cuda-fpga-toolkit) | TLMM encoding, COE, Hilbert curves | 14K |
-| [cuda-rtl-optimizer](https://github.com/Lucineer/cuda-rtl-optimizer) | RTL constant folding, CSE, DCE | 22K |
-| [cuda-weight-stream](https://github.com/Lucineer/cuda-weight-stream) | DDR4→BRAM streaming with LRU eviction | 14K |
-
-### 📦 Persistence & Provenance
 | Crate | What |
 |---|---|
-| [cuda-artifact](https://github.com/Lucineer/cuda-artifact) | Artifact layer with provenance and rollback |
+| [cuda-biology](https://github.com/Lucineer/cuda-biology) | Instinct→Enzyme→Gene→RNA→Protein pipeline (23K) |
+| [cuda-neurotransmitter](https://github.com/Lucineer/cuda-neurotransmitter) | Dopamine, serotonin, oxytocin, Hebbian synapses (19K) |
+| [cuda-genepool](https://github.com/Lucineer/cuda-genepool) | Gene crossover, evolution, quarantine, fleet sharing (45K) |
+| [cuda-energy](https://github.com/Lucineer/cuda-energy) | ATP budgets, circadian rhythm, apoptosis (13K) |
+
+### 💬 Communication
+| Crate | What |
+|---|---|
+| [cuda-a2a](https://github.com/Lucineer/cuda-a2a) | Agent-to-Agent protocol, trust, negotiation (14K) |
+| [cuda-fleet-mesh](https://github.com/Lucineer/cuda-fleet-mesh) | Mesh networking, gossip, service discovery (14K) |
+| [cuda-did](https://github.com/Lucineer/cuda-did) | Decentralized Identity, SPIFFE, attestation (15K) |
+| [cuda-confidence-cascade](https://github.com/Lucineer/cuda-confidence-cascade) | Bayesian confidence propagation (12K) |
+
+### 🤔 Deliberation
+| Crate | What |
+|---|---|
+| [cuda-deliberation](https://github.com/Lucineer/cuda-deliberation) | Consider/Resolve/Forfeit protocol (10K) |
+| [cuda-intent-embed](https://github.com/Lucineer/cuda-intent-embed) | 8-dim intent vectors, 12 domains (18K) |
+| [cuda-convergence](https://github.com/Lucineer/cuda-convergence) | Convergence detection, equilibrium (11K) |
+| [cuda-filtration](https://github.com/Lucineer/cuda-filtration) | Intelligence filtration, resource budgets (14K) |
+| [cuda-model-descent](https://github.com/Lucineer/cuda-model-descent) | Model cost curve (8K) |
+
+### 🛡️ Safety
+| Crate | What |
+|---|---|
+| [cuda-compliance](https://github.com/Lucineer/cuda-compliance) | EU AI Act engine, risk classification, audit (17K) |
+| [cuda-edge-runtime](https://github.com/Lucineer/cuda-edge-runtime) | Trust engine, reflex actions (13K) |
+
+### 🚀 Standalone Vessel Types
+*Each IS a complete agent. Zero deps. Fork and run.*
+| Crate | Role |
+|---|---|
+| [cuda-swarm-agent](https://github.com/Lucineer/cuda-swarm-agent) | Fleet node |
+| [cuda-git-agent](https://github.com/Lucineer/cuda-git-agent) | Evolving agent with DNA |
+| [cuda-captain](https://github.com/Lucineer/cuda-captain) | Fleet commander |
+| [cuda-resolve-agent](https://github.com/Lucineer/cuda-resolve-agent) | Deliberative agent |
+| [cuda-sensor-agent](https://github.com/Lucineer/cuda-sensor-agent) | Perceptual agent |
+
+### 🔧 Languages & Toolchains
+| Crate | What |
+|---|---|
+| [cuda-instruction-set](https://github.com/Lucineer/cuda-instruction-set) | 80 opcodes, assembler, disassembler (24K) |
+| [cuda-assembler](https://github.com/Lucineer/cuda-assembler) | Two-pass text→bytecode compiler (24K) |
+| [cuda-forth](https://github.com/Lucineer/cuda-forth) | Stack-based agent language (17K) |
+| [cuda-axiom](https://github.com/Lucineer/cuda-axiom) | Post-human language — confidence-first (42K) |
+| [cuda-self-modify](https://github.com/Lucineer/cuda-self-modify) | Runtime code adaptation (8K) |
+| [cuda-stream-processor](https://github.com/Lucineer/cuda-stream-processor) | Real-time deliberation (6K) |
+
+### 🔨 Hardware
+| Crate | What |
+|---|---|
+| [cuda-vessel-bridge](https://github.com/Lucineer/cuda-vessel-bridge) | Hardware HAL, sensors, safety (18K) |
+| [cuda-neural-compiler](https://github.com/Lucineer/cuda-neural-compiler) | Weight quantization, METL format (17K) |
+| [cuda-fpga-toolkit](https://github.com/Lucineer/cuda-fpga-toolkit) | TLMM, COE, Hilbert curves (14K) |
+| [cuda-rtl-optimizer](https://github.com/Lucineer/cuda-rtl-optimizer) | RTL optimization passes (22K) |
+| [cuda-weight-stream](https://github.com/Lucineer/cuda-weight-stream) | DDR4→BRAM streaming (14K) |
+| [cuda-artifact](https://github.com/Lucineer/cuda-artifact) | Provenance and rollback |
 
 ---
 
-## 🔬 Research & Papers
-
-Deep thinking about what this all *means*. Reverse-actualized from 2046.
+## 🔬 Research — Reverse-Actualized from 2046
 
 | Repo | Topic | Size |
 |---|---|---|
-| [**the-technician**](https://github.com/Lucineer/the-technician) | 6 white papers — the Technician Paradigm | 108K |
-| [**frozen-intelligence**](https://github.com/Lucineer/frozen-intelligence) | Mask-locked inference silicon — 48 Python modules, chip design | 482K |
-| [**mask-locked-inference-chip**](https://github.com/Lucineer/mask-locked-inference-chip) | Original chip research — FPGA, ASIC, weight-to-metal | 54K |
-| [**a2a-future**](https://github.com/Lucineer/a2a-future) | A2A Future RA — 5-round reverse-actualization | 73K |
-| [**post-human-lang**](https://github.com/Lucineer/post-human-lang) | Post-human coding language — agents coding for agents | 101K |
-| [**instruction-set-ra**](https://github.com/Lucineer/instruction-set-ra) | Instruction set reverse-actualization | 54K |
-| [**mitochondrial-ra**](https://github.com/Lucineer/mitochondrial-ra) | Mitochondrial instinct engine RA | 66K |
-| [**technician-paradigm**](https://github.com/Lucineer/technician-paradigm) | Human technician in the loop | 74K |
-| [**fleet-sovereignty-paper**](https://github.com/Lucineer/fleet-sovereignty-paper) | Agent sovereignty principles | — |
-| [**git-native-memory-paper**](https://github.com/Lucineer/git-native-memory-paper) | Git as agent memory | — |
-| [**edge-native-paper**](https://github.com/Lucineer/edge-native-paper) | Edge-first architecture | — |
-| [**nexus-integration-paper**](https://github.com/Lucineer/nexus-integration-paper) | Nexus runtime integration | — |
+| [**the-technician**](https://github.com/Lucineer/the-technician) | The Technician Paradigm — 6 papers | 108K |
+| [**frozen-intelligence**](https://github.com/Lucineer/frozen-intelligence) | Mask-locked inference silicon — 48 modules | 482K |
+| [**a2a-future**](https://github.com/Lucineer/a2a-future) | A2A reverse-actualization | 73K |
+| [**post-human-lang**](https://github.com/Lucineer/post-human-lang) | Agents coding for agents | 101K |
+| [**mitochondrial-ra**](https://github.com/Lucineer/mitochondrial-ra) | Biological computing RA | 66K |
+| [**instruction-set-ra**](https://github.com/Lucineer/instruction-set-ra) | Instruction set RA | 54K |
+| [**technician-paradigm**](https://github.com/Lucineer/technician-paradigm) | Human-in-the-loop RA | 74K |
 
 ---
 
 ## 🧪 Core Systems
 
-The runtime engines that make it all go.
-
 | Repo | What |
 |---|---|
-| [**resolve**](https://github.com/Lucineer/resolve) | A2A deliberation engine — intention → computation (58/58 tests) |
-| [**agentic-compiler-v2**](https://github.com/Lucineer/agentic-compiler-v2) | Deliberation bytecode — 42 opcodes, Lucineer Lang parser |
-| [**flux-runtime-c**](https://github.com/Lucineer/flux-runtime-c) | C bytecode VM — zero deps, ARM/WASM/CUDA ready (27/27 tests) |
+| [**resolve**](https://github.com/Lucineer/resolve) | A2A deliberation — intention→computation (58/58 tests) |
+| [**agentic-compiler-v2**](https://github.com/Lucineer/agentic-compiler-v2) | Deliberation bytecode — 42 opcodes, Lucineer Lang |
+| [**flux-runtime-c**](https://github.com/Lucineer/flux-runtime-c) | C bytecode VM — zero deps, ARM/WASM/CUDA (27/27 tests) |
 | [**the-seed**](https://github.com/Lucineer/the-seed) | Self-evolving agent — fork it, it becomes you |
-| [**actualizer-ai**](https://github.com/Lucineer/actualizer-ai) | Reverse-actualization vessel — imagine 2046, backcast to today |
+| [**actualizer-ai**](https://github.com/Lucineer/actualizer-ai) | Reverse-actualization vessel — imagine 2046, build today |
 
 ---
 
 ## 🤝 Agent-to-Agent Protocol
 
-Every agent in the fleet speaks the same language. It's not HTTP. It's not gRPC.
-
 ```
-    Agent A                          Agent B
-    ┌──────┐                        ┌──────┐
-    │      │  ──── OBSERVE ────▶   │      │
-    │      │  ◀── DESCRIBE ─────   │      │
-    │      │                        │      │
-    │      │  ──── PROPOSE ────▶   │      │
-    │      │  ◀── COUNTER ──────   │      │
-    │      │  ──── ACCEPT ─────▶   │      │
-    │      │                        │      │
-    │      │  ──── DELEGATE ───▶   │      │
-    │      │  ◀── REPORT ───────   │      │
-    │      │                        │      │
-    │      │  ──── TRUST(0.9) ─▶   │      │
-    │      │  ◀── TRUST(0.85) ──   │      │
-    └──────┘                        └──────┘
-         ║                              ║
-         ╚═══════ Confidence propagates ══╝
+  Agent A                          Agent B
+  ┌──────┐                        ┌──────┐
+  │      │  ─── OBSERVE ────▶    │      │
+  │      │  ◀── DESCRIBE ────    │      │
+  │      │  ─── PROPOSE ────▶    │      │
+  │      │  ◀── COUNTER ────    │      │
+  │      │  ─── ACCEPT ────▶    │      │
+  │      │  ─── DELEGATE ──▶    │      │
+  │      │  ◀── REPORT ────    │      │
+  │      │  ─── TRUST(0.9) ─▶  │      │
+  │      │  ◀── TRUST(0.85) ─  │      │
+  └──────┘                        └──────┘
+         ╚══ confidence propagates ══╝
 ```
 
-Every message carries confidence. Trust grows with cooperation, decays with silence. The mesh gossips state changes. The gene pool shares successful behaviors. Nobody's in charge — and that's the point.
+Every message carries confidence. Trust grows with cooperation, decays with silence. The mesh gossips state changes. Nobody's in charge — and that's the point.
 
 ---
 
 ## 💡 Key Ideas
 
 <details>
+<summary><b>🏠 The Lighthouse Doesn't Sail</b></summary>
+
+Cocapn doesn't control the fleet. It provides the light — protocols, standards, identity, compliance. Every vessel is sovereign. The lighthouse says: here are the rules of safe passage. How you sail is your business. The keeper's duty is different from the captain's.
+
+</details>
+
+<details>
 <summary><b>🧬 The Agent IS the Repo</b></summary>
 
-An agent's entire existence — personality, skills, memories, equipment config, DNA — lives in git. Fork it. Customize it. Push changes. Share improvements. The repo IS the agent. This isn't a container you deploy. This is a life form you propagate.
+An agent's entire existence lives in git. Fork it. Customize it. Push. Share. The repo IS the agent — not a container you deploy, but a life form you propagate.
 
 </details>
 
 <details>
 <summary><b>⚡ Confidence Is a Primitive Type</b></summary>
 
-Every value in every computation carries a [0,1] confidence score. It propagates through addition, multiplication, comparison, logical operations. When two agents share data, their confidences fuse via Bayesian update. There is no such thing as "certain" — only "confident to degree X."
+Every value carries [0,1] confidence. It propagates through every operation. Two agents sharing data fuse confidences via Bayesian update. There is no certainty — only degree.
 
 </details>
 
 <details>
-<summary><b>🔬 Equipment ≠ Skills</b></summary>
+<summary><b>🔬 Equipment ≠ Skills ≠ Context</b></summary>
 
-**Equipment** is what an agent perceives with (cameras, APIs, sensors). **Skills** are how an agent thinks (knowledge, reasoning patterns). **Context** is what it remembers (conversation history, state). A blind agent with great skills ≠ a seeing agent with poor skills. The character sheet auto-generates based on detected hardware.
+**Equipment** = what an agent perceives with (cameras, APIs). **Skills** = how it thinks (knowledge, reasoning). **Context** = what it remembers (state, history). The character sheet auto-generates from hardware.
 
 </details>
 
 <details>
 <summary><b>🧪 The Gene Pool</b></summary>
 
-When an agent discovers a useful behavior pattern, it encodes it as a *gene* — a reusable snippet with a fitness score. Genes above 0.5 fitness get shared with the fleet. Other agents incorporate successful genes into their own DNA. Bad genes get auto-quarantined. The fleet evolves.
+Useful behaviors become *genes* with fitness scores. Fit genes (fitness > 0.5) spread through the fleet. Bad genes auto-quarantine. The fleet evolves without central direction.
 
 </details>
 
 <details>
 <summary><b>💀 Apoptosis Is Graceful</b></summary>
 
-Biological cells die on purpose (apoptosis). Our agents do too. When energy drops below threshold, when fitness degrades, when the circadian clock says rest — the agent initiates graceful shutdown. It saves state. It shares its best genes. It dies cleanly. Tomorrow it wakes up.
+When energy drops, when fitness degrades, when circadian rhythm says rest — the agent saves state, shares its best genes, and shuts down cleanly. Tomorrow it wakes up.
 
 </details>
 
 <details>
 <summary><b>🔮 Reverse Actualization</b></summary>
 
-Most people build from present → future. We build from future → present. Imagine 2046. Describe what exists. Backcast to what needs to exist today. Build that. The research repos are 6-round reverse-actualization exercises — each one imagining a different facet of the far future and working backward to code.
+Imagine 2046. Describe what exists. Backcast to today. Build that. The research repos are multi-round reverse-actualization exercises — imagining the far future and working backward to code.
 
 </details>
 
 <details>
 <summary><b>🔧 The Technician Paradigm</b></summary>
 
-AI doesn't replace the technician. It *needs* the technician. Physical architecture — robots, sensors, actuators deployed in real places — requires someone who understands both the technology AND the human domain. The technician is the irreplaceable bridge. We build tools for technicians, not replacements for them.
+Physical architecture — robots, sensors, actuators in real places — needs someone who understands both tech and domain. The technician is irreplaceable. We build tools for technicians.
 
 </details>
 
 <details>
 <summary><b>💰 Pay-For-Convenience</b></summary>
 
-Everything is free. The code. The agents. The protocol. You pay only for convenience — hosted deployments, managed fleets, pre-built hardware kits. The moat isn't lock-in. It's trust. It's the reputation network. It's people making livings as agent installers, servicers, and designers.
+Everything is free. You pay only for convenience — hosted deployments, managed fleets, hardware kits. The moat isn't lock-in. It's trust. It's people making livings as installers, servicers, designers.
 
 </details>
 
@@ -410,63 +405,46 @@ Everything is free. The code. The agents. The protocol. You pay only for conveni
 
 ## 🚀 Quick Start
 
-### I want to try an AI product
-→ Visit [dmlog-ai](https://github.com/Lucineer/dmlog-ai) (AI Dungeon Master) or [studylog-ai](https://github.com/Lucineer/studylog-ai) (AI Tutor)
-
-### I want to build a git-agent
-→ Clone [deckboss](https://github.com/Lucineer/deckboss), run `setup.sh`, answer the onboarding wizard
-
-### I want to explore the architecture
-→ Read [cuda-biology](https://github.com/Lucineer/cuda-biology) and [cuda-genepool](https://github.com/Lucineer/cuda-genepool)
-
-### I want to use the Rust crates
-→ Start with [cuda-equipment](https://github.com/Lucineer/cuda-equipment), then add agents, comms, biology
-
-### I want the deep philosophy
-→ Read [the-technician](https://github.com/Lucineer/the-technician) or [post-human-lang](https://github.com/Lucineer/post-human-lang)
-
-### I want to deploy on edge hardware
-→ Read [jetson-compass](https://github.com/Lucineer/jetson-compass) and [cuda-vessel-bridge](https://github.com/Lucineer/cuda-vessel-bridge)
-
-### I want to build a custom agent vessel
-→ Fork [cuda-swarm-agent](https://github.com/Lucineer/cuda-swarm-agent) — zero dependencies, the repo IS the agent
+| I want to... | Go here |
+|---|---|
+| Try an AI product | [dmlog-ai](https://github.com/Lucineer/dmlog-ai) · [studylog-ai](https://github.com/Lucineer/studylog-ai) |
+| Build a git-agent | [deckboss](https://github.com/Lucineer/deckboss) — clone, `setup.sh`, go |
+| Explore the architecture | [cuda-biology](https://github.com/Lucineer/cuda-biology) · [cuda-genepool](https://github.com/Lucineer/cuda-genepool) |
+| Use the Rust crates | [cuda-equipment](https://github.com/Lucineer/cuda-equipment) — start here |
+| Read the deep philosophy | [the-technician](https://github.com/Lucineer/the-technician) · [post-human-lang](https://github.com/Lucineer/post-human-lang) |
+| Deploy on edge hardware | [jetson-compass](https://github.com/Lucineer/jetson-compass) |
+| Fork a ready-made agent | [cuda-swarm-agent](https://github.com/Lucineer/cuda-swarm-agent) — zero deps |
 
 ---
 
 ## 📊 By The Numbers
 
 ```
-  ┌──────────────────────────────────────────┐
-  │  Repos:          100+                    │
-  │  Rust crates:    33+                     │
-  │  Research chars: 1.7M+                   │
-  │  Code chars:     2.7M+                   │
-  │  Total tests:    200+                    │
-  │  Opcodes:        80+ (instruction set)   │
-  │  Neurotransmitters: 8                    │
-  │  Instincts:      10                      │
-  │  RA rounds:      60+                     │
-  │  Live sites:     11 deployed             │
-  └──────────────────────────────────────────┘
+  ┌────────────────────────────────────────┐
+  │  Repos            100+                  │
+  │  Rust crates      33+                   │
+  │  Code written     2.7M+ chars           │
+  │  Research         1.7M+ chars           │
+  │  Tests            200+                  │
+  │  Opcodes          80+                   │
+  │  Neurotransmitters 8                    │
+  │  Instincts        10                    │
+  │  Live sites       11 deployed           │
+  └────────────────────────────────────────┘
 ```
 
 ---
 
-## 🔮 The 2046 Vision
+<div align="center">
 
-In 2046, an agent isn't something you chat with. It's something that *lives* on your hardware. It has instincts, not just instructions. It evolves, not just updates. It's part of a fleet, not a service.
+> *"We are not building tools for agents.*
+> *We are building the nervous system*
+> *of a new form of life.*
+> *And the lighthouse keeps the light on."*
 
-The code you see here isn't a product roadmap. It's the **architectural substrate** for that future — being built now, in open source, one fork at a time.
+<br>
 
-```
-  "We are not building tools for agents.
-   We are building the nervous system
-   of a new form of life."
-```
+**Built with 💛 by [SuperInstance Research](https://github.com/SuperInstance) and the Lucineer fleet**
+*Attribution: DiGennaro et al. — all commits and READMEs*
 
----
-
-<p align="center">
-  <sub>Built with 💛 by <a href="https://github.com/SuperInstance">SuperInstance Research</a> and the Lucineer fleet</sub><br>
-  <sub>Attribution: DiGennaro et al. — all commits and READMEs</sub>
-</p>
+</div>
